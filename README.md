@@ -21,27 +21,27 @@ Arch Installation Scripts
 6. quit
 
 ## 2 Base System
-1. <code>wget URL<code>
-2. <code>sh 1_install_base_system.sh<code>
+1. <code>wget https://avarx.link/AISBase.sh<code>
+2. <code>sh AISBase.sh<code>
 3. Follow instructions
 
 ## 3 Do chroot stuff
-1. <code>wget URL<code>
-2. <code>sh 2_do_chroot_stuff.sh<code>
+1. <code>wget https://avarx.link/AISChroot.sh<code>
+2. <code>sh AISChroot.sh<code>
 3. Follow instructions
 
 ## 4 Create user
-1. <code>wget URL<code>
-2. <code>sh 3_create_user.sh<code>
+1. <code>wget https://avarx.link/AISUser.sh<code>
+2. <code>sh AISUser.sh<code>
 3. Follow instructions
 
 ## 5 Install WM
-1. <code>wget URL<code>
-2. <code>sh 4_install_wm.sh<code>
+1. <code>wget https://avarx.link/AISWM.sh<code>
+2. <code>sh AISWM.sh<code>
 3. Follow instructions
 
 ## 6 Install packages
-1. <code>wget URL<code>
-2. <code>sh 5_install_packages.sh<code>
+1. <code>wget https://avarx.link/AISPackages.sh<code>
+2. <code>sh AISPackages.sh<code>
 3. Follow instructions
 
