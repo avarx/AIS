@@ -43,11 +43,20 @@ sudo pacman -S --noconfirm veracrypt &&
 sudo pacman -S --noconfirm virtualbox &&
 sudo pacman -S --noconfirm virtualbox-guest-dkms &&
 sudo pacman -S --noconfirm weechat &&
-sudo pacman -S --noconfirm wine &&
 sudo pacman -S --noconfirm wireshark-common &&
 sudo pacman -S --noconfirm wireshark-gtk &&
 sudo pacman -S --noconfirm xterm &&
-sudo pacman -S --noconfirm yaourt &&
 sudo pacman -S --noconfirm zaproxy &&
 sudo pacman -S --noconfirm zbar &&
 sudo pacman -S --noconfirm zsh
+
+#yaourt and dependencies
+curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
+tar -xvzf package-query.tar.gz
+cd package-query
+makepkg -si
+cd ..
+curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
+tar -xvzf yaourt.tar.gz
+cd yaourt
+makepkg -si
