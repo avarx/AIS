@@ -1,6 +1,8 @@
 # AIS
 Arch Installation Scripts
 
+!(https://cdn-images-1.medium.com/max/600/1*WMv9sSML3gxXKjihYLHFRQ.jpeg)
+
 # Description
 **Really** basic scripts to aid in installing Arch Linux.
 
