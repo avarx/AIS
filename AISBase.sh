@@ -1,8 +1,4 @@
-
-
-
-
- #!/bin/bash
+#!/bin/bash
 ################################################
 echo "---------------------------------------"
 echo -e "\033[32mFormatting drives...\e[0m"
@@ -11,7 +7,7 @@ echo -e "\033[33menter device for ROOT (probably sda2)\e[0m"
     read DEV
     cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 4000 luksFormat /dev/$DEV
     cryptsetup open --type luks /dev/$DEV lvm
-    
+
     pvcreate /dev/mapper/lvm
     vgcreate vol0 /dev/mapper/lvm
     # Adjust swap size according to your system needs.
@@ -22,6 +18,7 @@ echo -e "\033[33menter device for ROOT (probably sda2)\e[0m"
     mkfs.ext4 /dev/mapper/vol0-lv_root
     mkfs.ext4 /dev/mapper/vol0-lv_home
     # mount root
+    mkdir /mnt
     mount /dev/mapper/vol0-lv_root /mnt
     # Mount the home drive
     mkdir /mnt/home
