@@ -15,17 +15,17 @@ echo -e "\033[33menter device for ROOT (probably sda2)\e[0m"
     lvcreate --name lv_root -L 85GB vol0
     lvcreate --name lv_home -l 100%FREE vol0
     # format root and home
-    mkfs.ext4 /dev/mapper/vol0/lv_root
-    mkfs.ext4 /dev/mapper/vol0/lv_home
+    mkfs.ext4 /dev/mapper/vol0-lv_root
+    mkfs.ext4 /dev/mapper/vol0-lv_home
     # mount root
     mkdir /mnt
-    mount /dev/mapper/vol0/lv_root /mnt
+    mount /dev/mapper/vol0-lv_root /mnt
     # Mount the home drive
     mkdir /mnt/home
-    mount /dev/mapper/vol0/lv_home /mnt/home
+    mount /dev/mapper/vol0-lv_home /mnt/home
     # create swap
-    mkswap /dev/mapper/vol0/lv_swap
-    swapon /dev/mapper/vol0/lv_swap
+    mkswap /dev/mapper/vol0-lv_swap
+    swapon /dev/mapper/vol0-lv_swap
 
 echo -e "\033[33menter device for BOOT (probably sda1)\e[0m"
     read DEV
