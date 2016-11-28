@@ -1,7 +1,6 @@
-#!/bin/bash
 ################################################
 #install packages alphabetically
-# $ sudo pacman -S $(cat installed_pacman_packages | grep -o "^ *[^#]*" | less)
+# $ sudo pacman -S $(cat AISPackages.sh | grep -o "^ *[^#]*" | less)
 # Thx to @mindfuckup
 
 composer
@@ -52,14 +51,3 @@ xterm
 zaproxy
 zbar
 zsh
-
-#yaourt and dependencies
-curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
-tar -xvzf package-query.tar.gz
-cd package-query
-makepkg -si
-cd ..
-curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
-tar -xvzf yaourt.tar.gz
-cd yaourt
-makepkg -si
