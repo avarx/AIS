@@ -1,6 +1,6 @@
 ################################################
 #install packages alphabetically
-# $ sudo pacman -S $(cat AISPackages.sh | grep -o "^ *[^#]*" | less)
+# $ sudo pacman -S --noconfirm  $(cat AISPackages.sh | grep -o "^ *[^#]*" | less)
 # Thx to @mindfuckup
 
 composer
