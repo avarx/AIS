@@ -3,12 +3,9 @@
 # $ sudo pacman -S --noconfirm  $(cat AISPackages.sh | grep -o "^ *[^#]*" | less)
 # Thx to @mindfuckup
 alsa-utils
-broadcom-wl-dkms
-burpsuite
 composer
 dialog
 docker
-exif
 extundelete
 fcrackzip
 feh
@@ -33,12 +30,8 @@ mitmproxy
 mpc
 mpd
 mplayer
-multimon-ng-git
 mutt
 nano
-naturalscrolling
-ncmpcpp-git
-nessus
 net-tools
 netctl
 nikto
@@ -47,27 +40,19 @@ openssh
 openvpn
 p7zip
 pandoc
-phpmd
-phpstorm-eap
-phpunit
 powertop
 proxychains-ng
 ranger
 rsync
 rxvt-unicode
 screen
-screenfetch-git
 sox
-spotify-stable
-sqlmap-git
 steghide
 strace
-sublime-text-dev
 teamspeak3
 terminus-font
 thunderbird
 tor
-tor-browser-en
 torsocks
 transmission-cli
 vagrant
@@ -76,7 +61,6 @@ vim
 virtualbox
 virtualbox-guest-dkms
 weechat
-wine
 wireshark-common
 wireshark-gtk
 wpa_supplicant
