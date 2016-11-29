@@ -44,6 +44,5 @@ Arch Installation Scripts
 
 ## 6 Install packages
 1. <code>wget https://avarx.link/AISPackages.sh</code>
-2. <code>sh AISPackages.sh</code>
-3. Follow instructions
+2. <code>sudo pacman -S --noconfirm  $(cat AISPackages.sh | grep -o "^ *[^#]*" | less)</code>
 
