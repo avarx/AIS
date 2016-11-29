@@ -1,3 +1,6 @@
+#install packages alphabetically
+# $ yaourt -S --noconfirm  $(cat AISYaourtPackages.sh | grep -o "^ *[^#]*" | less)
+# Thx to @mindfuckup
 broadcom-wl-dkms
 burpsuite
 exif
